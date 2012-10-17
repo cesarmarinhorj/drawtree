@@ -55,11 +55,22 @@
 
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; YOUR CODE STARTS HERE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Below are few examples
+;  code between #| and |# is a comment
+
+#|
 ;;; example
 ;(show-tree '(1(2)(3(4(10)(11))(5(6)(7)(8)(9)))) (get-file-name "tree" "png"))
 ;(show-tree '(1(2(3(4)(5)))(6(7)(8))) null)
 ;(draw-array '(1(2(3(4)(5)))(6(7)(8))) null)
+|#
 
+#|
 ;;; linear tree
 (draw-tree-list-gif "linear" 
                     (list
@@ -67,10 +78,14 @@
                      '(1(2(3(* "blue" 4(5(* "blue" 6(7)))))))
                      '(1(2(* "red" 3(* "blue" 4(5(* "blue" 6(7))))))))
                     #:force true)
+|#
 
+#|
 ;;; simple tree
 (show-tree '(1(2(3(4)(5)))(6(7)(8))) (get-file-name "simple" "png"))
+|#
 
+#|
 ;;; simple traverse tree - gif
 (draw-tree-list-gif "simple-traverse"
                     (list
@@ -92,7 +107,9 @@
                      '(1(2(3(4)(5)))(6(7)(8)))
                      )
                     #:force true)
+|#
 
+#|
 ;;; simple tree - gif
 (draw-tree-list-gif "simple"
                     (list
@@ -101,3 +118,7 @@
                      '(* "red" 1(2(3(4)(* "blue" 5)))(6(* "blue" 7)(8)))
                      )
                     #:force true)
+|#
+
+(show-tree '(1(2)(3(4(10)(11))(5(6)(7)(8)(9)))) (get-file-name "tree" "png"))
+
