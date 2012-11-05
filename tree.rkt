@@ -9,7 +9,7 @@
 
 (define (node-color? node)
   (if (null? (cadr node))
-      "black"
+      "darkgray"
       (cadr node)))
 
 (define (get-node-value node)
